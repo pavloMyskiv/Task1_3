@@ -1,0 +1,235 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  color: #708090;
+  background-color: #008080;
+}
+
+p {
+  margin: 0;
+}
+
+.wrapper {
+  padding: 15px 0;
+}
+
+h1 {
+  margin: 10px;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 550px;
+  background-color: #D3D3D3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.formlist {
+  padding: 15px 30px;
+  background-color: #fff;
+  align-self: stretch;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.first_name {
+  padding: 8px;
+}
+.first_name input {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+}
+.first_name label {
+  font-weight: bold;
+  color: #3CB371;
+  cursor: pointer;
+}
+
+.last_name {
+  padding: 8px;
+}
+.last_name input {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+}
+.last_name label {
+  color: #3CB371;
+  cursor: pointer;
+}
+
+.email {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 8px;
+}
+.email input {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+}
+.email label {
+  color: #3CB371;
+  cursor: pointer;
+}
+
+.password {
+  padding: 8px;
+}
+.password input {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+}
+.password label {
+  color: #3CB371;
+  cursor: pointer;
+}
+
+.confirm_password {
+  padding: 8px;
+}
+.confirm_password input {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+}
+.confirm_password label {
+  color: #3CB371;
+  cursor: pointer;
+}
+
+.gender {
+  padding: 8px;
+}
+.gender input {
+  max-width: 100%;
+  height: 20px;
+  margin: 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.gender label {
+  font-size: 12px;
+  font-weight: normal;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.gender p {
+  color: #3CB371;
+}
+
+.hobbies {
+  padding: 8px;
+}
+.hobbies input {
+  max-width: 100%;
+  height: 20px;
+  margin: 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.hobbies label {
+  font-size: 12px;
+  font-weight: normal;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.hobbies p {
+  color: #3CB371;
+}
+
+.sourse_of_income {
+  padding: 8px;
+}
+.sourse_of_income select {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+}
+.sourse_of_income p {
+  color: #3CB371;
+}
+
+.income {
+  padding: 8px;
+}
+.income label {
+  padding: 5px;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #3CB371;
+}
+.income input {
+  max-width: 100%;
+  height: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.income p {
+  color: #3CB371;
+  vertical-align: middle;
+}
+
+.upload_picture {
+  padding: 8px;
+}
+.upload_picture input {
+  max-width: 100%;
+  height: 20px;
+  cursor: pointer;
+}
+.upload_picture p {
+  color: #3CB371;
+}
+
+.age {
+  padding: 8px;
+}
+.age input {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+}
+.age label {
+  color: #3CB371;
+  cursor: pointer;
+}
+
+.bio {
+  grid-row-start: 8;
+  grid-row-end: 10;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 8px;
+}
+.bio textarea {
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+}
+.bio label {
+  color: #3CB371;
+  cursor: pointer;
+}
+
+button {
+  color: #fff;
+  align-self: flex-end;
+  background-color: #3CB371;
+  padding: 8px 15px;
+  margin: 10px 35px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

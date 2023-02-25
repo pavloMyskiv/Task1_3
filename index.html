@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#" method="get">
+            <h1>Create Account</h1>
+            <div class="formlist">
+                <div class="first_name">
+                    <label for="first_name">First name*</label><br>
+                    <input id="first_name" tabindex="1" type="text" name="first_name" placeholder="enter your first name">
+                </div>
+                <div class="last_name">
+                    <label for="last_name">Last name</label><br>
+                    <input id="last_name" tabindex="2" type="text" name="last_name" placeholder="enter your last name">
+                </div>
+                <div class="email">
+                    <label for="email">Email*</label><br>
+                    <input id="email" tabindex="3" type="email" name="email" placeholder="enter your email">
+                </div>
+                <div class="password">
+                    <label for="password">Password*</label><br>
+                    <input id="password" tabindex="4" type="password" name="password" placeholder="enter your password">
+                </div>
+                <div class="confirm_password">
+                    <label for="confirm_password">Confirm password*</label><br>
+                    <input id="confirm_password" tabindex="5" type="password" name="confirm_password" placeholder="enter your password again">
+                </div>
+                <div class="gender">
+                    <p>Gender:</p>
+                    <input id="male" tabindex="6"  type="radio" name="gender" value="male">
+                    <label for="male">Male</label> 
+                    <input id="female" tabindex="6"  type="radio" name="gender" value="female"> 
+                    <label for="female">Female</label>
+                </div>
+                <div class="hobbies">
+                    <p>Hobbies</p>                   
+                    <input id="music" tabindex="7" type="checkbox" name="music" value="yes">
+                    <label for="music">Music</label>
+                    <input id="sports" tabindex="8" type="checkbox" name="sports" value="yes">
+                    <label for="sports">Sports</label>
+                    <input id="travel" tabindex="9" type="checkbox" name="travel" value="yes">
+                    <label for="travel">Travel</label>
+                    <input id="movies" tabindex="10" type="checkbox" name="movies" value="yes">
+                    <label for="movies">Movies</label>                    
+                </div>
+                <div class="sourse_of_income">
+                    <p>Sourse of income</p>
+                    <select id="sourse_of_income" tabindex="11" name="sourse_of_income" >
+                        <option value="employed">Employed</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="business">Business</option>
+                    </select>
+                </div>
+                <div class="income">
+                    <p>Income</p> 
+                    <input id="income" tabindex="12" type="range" name="income" min="0" max="20">
+                    <label for="income">20K</label>
+                </div>
+                <div class="upload_picture">
+                    <p>Upload profile picture</p>
+                    <input id="upload_picture" tabindex="13 " type="file" name="upload_picture" >
+                </div>
+                <div class="age">
+                    <label for="age">Age</label><br>
+                    <input id="age" tabindex="14" type="number" name="age" value="18">
+                </div>
+                <div class="bio">
+                    <label for="bio">Bio</label><br>
+                    <textarea id="bio" tabindex="15" name="bio" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <button type="submit">Create</button>
+        </form>
+    </div>
+</body>
+</html>

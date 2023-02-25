@@ -1,0 +1,222 @@
+$maincolor: #3CB371;
+$paddinItem: 8px;
+$inputWeigth: 100%;
+$inputHeigth: 20px;
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #708090;
+    background-color: #008080;
+}
+p{
+    margin: 0;
+}
+.wrapper {
+    padding: 15px 0;
+}
+h1{
+    margin: 10px;
+}
+form{
+    margin: 0 auto;
+    max-width: 550px;
+    background-color: #D3D3D3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.formlist {
+    padding: 15px 30px;
+    background-color: #fff;
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: 50% 50%;   
+}
+.first_name {
+    padding: $paddinItem;
+    input {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    label {
+        font-weight: bold;
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+.last_name {
+    padding: $paddinItem;
+    input {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    label {
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+.email {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: $paddinItem;
+    input {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    label {
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+.password {
+    padding: $paddinItem;
+    input {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    label {
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+.confirm_password {
+    padding: $paddinItem;
+    input {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    label {
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+.gender {
+    padding: $paddinItem;
+    input {
+        max-width: $inputWeigth;
+        height: $inputHeigth;
+        margin: 0;
+        vertical-align: middle;
+        cursor: pointer;
+    };
+    label {
+        font-size: 12px;
+        font-weight: normal;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    p {
+        color: $maincolor;
+    }
+}
+.hobbies {
+    padding: $paddinItem;
+    input {
+        max-width: $inputWeigth;
+        height: $inputHeigth;
+        margin: 0;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    label {
+        font-size: 12px;
+        font-weight: normal;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    p {
+        color: $maincolor;
+    }
+}
+.sourse_of_income {
+    padding: $paddinItem;
+    select {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    p {
+        color: $maincolor;
+    }
+}
+.income {
+    padding: $paddinItem;
+    label {
+        padding: 5px;
+        color: #fff;
+        border-radius: 3px;
+        background-color: $maincolor;
+    }
+    input {
+        max-width: $inputWeigth;
+        height: $inputHeigth;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    p {
+        color: $maincolor;
+        vertical-align: middle;
+    }
+}
+.upload_picture {
+    padding: $paddinItem;
+    input {
+        max-width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    p {
+        color: $maincolor;
+    }
+}
+.age {
+    padding: $paddinItem;
+    input {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    label {
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+.bio {
+    grid-row-start: 8;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: $paddinItem;
+    textarea {
+        width: $inputWeigth;
+        height: 60px;
+        cursor: pointer;
+    }
+    label {
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+button {
+    color: #fff;
+    align-self: flex-end;
+    background-color: $maincolor;
+    padding: 8px 15px;
+    margin: 10px 35px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
