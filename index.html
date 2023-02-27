@@ -52,16 +52,20 @@
                 </div>
                 <div class="sourse_of_income">
                     <p>Sourse of income</p>
-                    <select id="sourse_of_income" tabindex="11" name="sourse_of_income" >
-                        <option value="employed">Employed</option>
-                        <option value="freelance">Freelance</option>
-                        <option value="business">Business</option>
-                    </select>
+                    <div class="select_wrapper">
+                        <select id="sourse_of_income" tabindex="11" name="sourse_of_income" >
+                            <option value="employed">Employed</option>
+                            <option value="freelance">Freelance</option>
+                            <option value="business">Business</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="income">
                     <p>Income</p> 
-                    <input id="income" tabindex="12" type="range" name="income" min="0" max="20">
-                    <label for="income">20K</label>
+                    <div class="range_wrapper">
+                        <input id="income" tabindex="12" type="range" name="income" min="0" max="100">
+                        <output for="income">20K</output>
+                    </div>
                 </div>
                 <div class="upload_picture">
                     <p>Upload profile picture</p>
