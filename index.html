@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="#" method="get">
+        <form action="#" method="get" oninput="result.value=parseInt(income.value)">
             <h1>Create Account</h1>
             <div class="formlist">
                 <div class="first_name">
@@ -63,8 +63,8 @@
                 <div class="income">
                     <p>Income</p> 
                     <div class="range_wrapper">
-                        <input id="income" tabindex="12" type="range" name="income" min="0" max="100">
-                        <output for="income">20K</output>
+                        <input id="income" tabindex="12" type="range" name="income" min="0" max="100" value="20">
+                        <output id="result" for="income">20K</output>
                     </div>
                 </div>
                 <div class="upload_picture">
