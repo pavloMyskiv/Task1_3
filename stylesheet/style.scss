@@ -1,0 +1,345 @@
+
+
+$maincolor: #3CB371;
+$paddinItem: 8px;
+$inputWeigth: 100%;
+$inputHeigth: 20px;
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #708090;
+    background-color: #008080;
+}
+p{
+    margin: 0;
+}
+.wrapper {
+    padding: 15px 0;
+}
+h1{
+    margin: 10px;
+}
+form{
+    margin: 0 auto;
+    max-width: 550px;
+    background-color: #D3D3D3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.formlist {
+    padding: 15px 30px;
+    background-color: #fff;
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: 50% 50%;   
+}
+.first_name {
+    padding: $paddinItem;
+    input {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    label {
+        font-weight: bold;
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+.last_name {
+    padding: $paddinItem;
+    input {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    label {
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+.email {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: $paddinItem;
+    input {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    label {
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+.password {
+    padding: $paddinItem;
+    input {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    label {
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+.confirm_password {
+    padding: $paddinItem;
+    input {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    label {
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+.gender {
+    padding: $paddinItem;
+    input {
+        max-width: $inputWeigth;
+        height: $inputHeigth;
+        margin: 0;
+        vertical-align: middle;
+        cursor: pointer;
+    };
+    label {
+        font-size: 12px;
+        font-weight: normal;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    p {
+        color: $maincolor;
+    }
+}
+.hobbies {
+    padding: $paddinItem;
+    input {
+        max-width: $inputWeigth;
+        height: $inputHeigth;
+        margin: 0;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    label {
+        font-size: 12px;
+        font-weight: normal;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    p {
+        color: $maincolor;
+    }
+}
+.sourse_of_income {
+    padding: $paddinItem;
+    .select_wrapper {
+        padding: 1px 2px;
+        position: relative;
+    }
+    .select_wrapper::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-image: url("/image/arrows.png");
+        background-size: contain;
+        pointer-events: none;
+    }
+    select {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+        appearance: none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        border: 1px solid #000;
+        border-radius: 2px;
+        padding: 1px 25px 1px 5px;
+    }
+    select::-ms-expand{
+        display: none;
+    }
+    p {
+        color: $maincolor;
+    }
+}
+.income {
+    padding: $paddinItem;
+    .range_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    output {
+        padding: 5px;
+        margin-left: 5px;
+        color: #fff;
+        border-radius: 3px;
+        background-color: $maincolor;
+        vertical-align: middle;
+    }
+    input {
+        flex: 1 1 auto;
+        align-self: stretch;
+        vertical-align: middle;
+    }
+    p {
+        color: $maincolor;
+        
+    }
+}
+.upload_picture {
+    padding: $paddinItem;
+    input {
+        max-width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    p {
+        color: $maincolor;
+    }
+}
+.age {
+    padding: $paddinItem;
+    input {
+        width: $inputWeigth;
+        height: $inputHeigth;
+        cursor: pointer;
+    }
+    label {
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+.bio {
+    grid-row-start: 8;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: $paddinItem;
+    textarea {
+        width: $inputWeigth;
+        height: 60px;
+        cursor: pointer;
+    }
+    label {
+        color: $maincolor;
+        cursor: pointer;
+    }
+}
+button {
+    color: #fff;
+    align-self: flex-end;
+    background-color: $maincolor;
+    padding: 8px 15px;
+    margin: 10px 35px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+input[type=range] {
+height: 5px;
+-webkit-appearance: none;
+margin: 10px 0;
+max-width: 100%;
+}
+input[type=range]:focus {
+outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+width: 100%;
+height: 5px;
+cursor: pointer;
+animate: 0.2s;
+box-shadow: 0px 0px 0px #353535;
+background: #c1c1c1;
+border-radius: 5px;
+border: 1px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+box-shadow: 0px 0px 0px #353535;
+border: 1px solid #000000;
+height: 15px;
+width: 15px;
+border-radius: 15px;
+background: #ffffff;
+cursor: pointer;
+-webkit-appearance: none;
+margin-top: -6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+background: #c1c1c1;
+}
+input[type=range]::-moz-range-track {
+width: 100%;
+height: 10px;
+cursor: pointer;
+animate: 0.2s;
+box-shadow: 0px 0px 0px #353535;
+background: #c1c1c1;
+border-radius: 5px;
+border: 1px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+box-shadow: 0px 0px 0px #353535;
+border: 1px solid #000000;
+height: 15px;
+width: 15px;
+border-radius: 15px;
+background: #ffffff;
+cursor: pointer;
+}
+input[type=range]::-ms-track {
+width: 100%;
+height: 10px;
+cursor: pointer;
+animate: 0.2s;
+background: transparent;
+border-color: transparent;
+color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+background: #c1c1c1;
+border: 1px solid #000000;
+border-radius: 15px;
+box-shadow: 0px 0px 0px #353535;
+}
+input[type=range]::-ms-fill-upper {
+background: #c1c1c1;
+border: 1px solid #000000;
+border-radius: 15px;
+box-shadow: 0px 0px 0px #353535;
+}
+input[type=range]::-ms-thumb {
+margin-top: 1px;
+box-shadow: 0px 0px 0px #353535;
+border: 1px solid #000000;
+height: 15px;
+width: 15px;
+border-radius: 15px;
+background: #ffffff;
+cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+background: #c1c1c1;
+}
+input[type=range]:focus::-ms-fill-upper {
+background: #c1c1c1;
+}
